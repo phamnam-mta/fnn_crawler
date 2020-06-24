@@ -19,7 +19,7 @@ git clone https://github.com/phamnam-mta/fnn_crawler.git
 pip install -r requirements.txt
 ```
 
-## Example Running the spiders
+## Example running the spiders
 
 You can run a spider using the scrapy crawl command:
 
