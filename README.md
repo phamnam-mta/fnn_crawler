@@ -1,4 +1,4 @@
-# IFT Correction
+# FNN Crawler
 
 FNN Crawler is a web crawler to scrape information about movies from online movie websites
 
