@@ -10,10 +10,14 @@ FNN Crawler is a web crawler to scrape information about movies from online movi
 ## Installation
 
 1. Clone this repository
+```bash
+git clone https://github.com/phamnam-mta/fnn_crawler.git
+```
+
 2. Install dependencies
-   ```bash
-   pip install -r requirements.txt
-   ```
+```bash
+pip install -r requirements.txt
+```
 
 ## Example Running the spiders
 
