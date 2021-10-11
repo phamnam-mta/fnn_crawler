@@ -16,11 +16,8 @@ git clone https://github.com/phamnam-mta/fnn_crawler.git
 
 2. Install dependencies
 
-First, download file 'Twisted‑20.3.0‑cp39‑cp39‑win_amd64.whl' at location https://www.lfd.uci.edu/~gohlke/pythonlibs/#twisted
-
 After run command:
 ```bash
-pip install Twisted‑20.3.0‑cp39‑cp39‑win_amd64.whl
 pip install -r requirements.txt
 ```
 

@@ -12,8 +12,9 @@ class VozSpider(scrapy.Spider):
     name = 'voz'
     allowed_domains = ['voz.vn']
     start_urls = [
-        'https://voz.vn/f/chuyen-tro-linh-tinh.17/'
-    ]
+            'https://voz.vn/f/chuyen-tro-linh-tinh.17/',
+            'https://voz.vn/f/diem-bao.33/'
+        ]
 
     def parse(self, response):
 
@@ -26,7 +27,7 @@ class VozSpider(scrapy.Spider):
                 l.add_value('thread', thread_name)
                 l.add_value('hashcode', hashcode)
                 l.add_xpath('user', './/h4[@class="message-name"]/a/text()')
-                l.add_xpath('quote', './/div[@class="bbCodeBlock-expandContent "]')
+                l.add_css('quote', '.bbCodeBlock-expandContent ::text')
                 l.add_xpath('reply', './/div[@class="bbWrapper"]/text()')
                 l.add_xpath('ordinal_numbers', './/ul', re=r'#\d+')
                 l.add_xpath('post_time', './/time/@datetime')

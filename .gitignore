@@ -7,8 +7,8 @@ __pycache__/
 # C extensions
 *.so
 
-# Mongo DB
-database/
+# data
+*.json
 
 # Distribution / packaging
 .Python
